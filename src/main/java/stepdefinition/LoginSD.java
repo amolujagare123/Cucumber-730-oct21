@@ -40,7 +40,7 @@ public class LoginSD {
     @Then("I should land on home page")
     public void i_should_land_on_home_page() {
         System.out.println("I should land on home page");
-        String expected = "";
+        String expected = "https://stock.scriptinglogic.net/dashboard.php";
         String actual = driver.getCurrentUrl();
         Assert.assertEquals("wrong page",expected,actual);
 
