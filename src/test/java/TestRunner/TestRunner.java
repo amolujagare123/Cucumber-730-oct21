@@ -5,8 +5,10 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "Features"
+@CucumberOptions(features = "Features/login2.feature"
         ,glue = "stepdefinition"
-        ,tags = "@login")
+       /* ,tags = "@login"*/
+, plugin = {"pretty","html:target/cucumber/report.html"}
+)
 public class TestRunner {
 }

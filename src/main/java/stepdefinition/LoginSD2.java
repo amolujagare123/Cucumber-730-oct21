@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginSD2 {
 
@@ -36,6 +37,7 @@ public class LoginSD2 {
     @Then("^I should get an error$")
     public void i_should_get_an_error() throws Throwable {
         System.out.println("I should get an error");
+        Assert.assertEquals("this is not the correct error",true,false);
     }
     @Then("^I should get another error$")
     public void i_should_get_another_error() throws Throwable {

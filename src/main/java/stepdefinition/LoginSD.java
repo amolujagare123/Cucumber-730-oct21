@@ -1,5 +1,6 @@
 package stepdefinition;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -45,4 +46,15 @@ public class LoginSD {
         Assert.assertEquals("wrong page",expected,actual);
 
     }
+
+    @Given("^Browser is opened$")
+    public void browser_is_opened() throws Throwable {
+        System.out.println(">>>> Browser is opened >>>");
+    }
+
+    @And("^it is maximized$")
+    public void it_is_maximized() throws Throwable {
+        System.out.println(">>>> it is maximized >>>");
+    }
+
 }

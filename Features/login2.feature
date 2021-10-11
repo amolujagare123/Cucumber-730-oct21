@@ -1,5 +1,10 @@
 Feature: login examples with parameterization
 
+  Background: before every scenario execution
+    Given Browser is opened
+    And it is maximized
+
+
   @login
   Scenario: to test the functionality of login button for valid inputs
     Given I am on login page of billing
